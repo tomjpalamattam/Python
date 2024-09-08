@@ -182,7 +182,7 @@ for e in range(episodes):
     
 # Extracting the best sequence of adaptations
 def get_best_sequence(env, agent, initial_state, sequence_length=10):
-    state = env.reset()
+    #state = env.reset()
     state = np.reshape(state, [1, state_size])
     best_sequence = []
     for _ in range(sequence_length):
