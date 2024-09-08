@@ -180,18 +180,6 @@ for e in range(episodes):
     print(f"episode: {e}/{episodes}, total reward: {total_reward}, e: {agent.epsilon:.2f}")
     
     
-
-# Extracting the best sequence of adaptations
-def get_best_sequence(env, agent, initial_state, sequence_length=10):
-    state = env.reset()
-    state = np.reshape(state, [1, state_size])
-    best_sequence = []
-    for _ in range(sequence_length):
-        action = agent.act(state)
-        best_sequence.append(action)
-        next_state, reward, done,
-
-```python
 # Extracting the best sequence of adaptations
 def get_best_sequence(env, agent, initial_state, sequence_length=10):
     state = env.reset()
